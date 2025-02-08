@@ -1,0 +1,125 @@
+:root {
+  --primary: #ff6b6b;
+  --secondary: #4ecdc4;
+  --accent: #ffe66d;
+  --bg: #2d3436;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background: var(--bg);
+  color: var(--accent);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  background-image: 
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.container {
+  max-width: 800px;
+  padding: 2rem;
+  border: 4px dashed var(--primary);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  color: var(--primary);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+  animation: glow 2s ease-in-out infinite;
+}
+
+.construction-emoji {
+  font-size: 4rem;
+  margin: 2rem 0;
+  animation: bounce 1s ease infinite;
+}
+
+.progress-container {
+  width: 100%;
+  height: 30px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  margin: 2rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 75%;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 15px;
+  animation: progress-pulse 1.5s ease-in-out infinite;
+  position: relative;
+}
+
+.progress-bar::after {
+  content: '🛠️';
+  position: absolute;
+  right: -20px;
+  top: -5px;
+  transform: rotate(30deg);
+  animation: hammer-spin 2s linear infinite;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.countdown-item {
+  background: rgba(255,255,255,0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+.countdown-number {
+  font-size: 2rem;
+  color: var(--secondary);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes progress-pulse {
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(1.02); }
+}
+
+@keyframes hammer-spin {
+  0% { transform: rotate(30deg); }
+  50% { transform: rotate(-30deg); }
+  100% { transform: rotate(30deg); }
+}
+
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 10px var(--primary); }
+  50% { text-shadow: 0 0 20px var(--primary); }
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 1.5rem; }
+  .countdown { flex-wrap: wrap; }
+}
