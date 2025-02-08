@@ -1,0 +1,114 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    background-color: rgb(12, 12, 12);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.settings{
+    background-color: rgb(0, 0, 0);
+    border-style: solid none;
+    border-width: 2px;
+    border-color: rgb(223, 0, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    height: 40px;
+    width: 80%;
+    background: rgb(218, 0, 0);
+    border-radius: 5px;
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    margin-bottom: 4px;
+    border-style: solid;
+    border-color: rgb(255, 216, 206);
+}
+
+button:hover {
+    background: rgb(129, 0, 0);
+    color: rgb(216, 216, 216);
+}
+
+.slider_text {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: rgb(223, 0, 0);
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.controls button {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 5px;
+    background: rgb(218, 0, 0);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(255, 216, 206);
+}
+
+.controls button:hover {
+    background: rgb(129, 0, 0);
+}
+
+.control-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.control-grid button:nth-child(1) { grid-column: 2; }
+.control-grid button:nth-child(2) { grid-column: 1; }
+.control-grid button:nth-child(3) { grid-column: 3; }
+.control-grid button:nth-child(4) { grid-column: 2; }
