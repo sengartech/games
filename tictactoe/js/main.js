@@ -26,15 +26,18 @@ cellElements.forEach(cell => {
     cell.classList.add("disabled");
     addInCell(cell, currentPlayer);
 
+    playSound('move_click');
+
     if (winnerCheck(currentPlayer)) {
-
       addInactive();
-      result_text.innerText = currentPlayer + " Win the Game";
+      result_text.innerText = currentPlayer + " Won!!";
 
+      playSound('win');
     } else if (isDraw()) {
-      // Draw the Game!
       addInactive();
-      result_text.innerText = "Draw the Game!";
+      result_text.innerText = "Game Draw!";
+
+      playSound('draw');
     } else {
       swapPlayer();
     }
@@ -80,5 +83,8 @@ function addInactive() {
 
 //restart function
 restart_btn.onclick = () => {
-  location.reload();
+  playSound('new_level');
+  setTimeout(() => {
+    location.reload();
+  }, 800)
 }
