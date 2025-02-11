@@ -159,9 +159,9 @@ function drawInstructions() {
 
     fill(0, 0, 0);
     textSize(50);
-    text('Instructions:', 140, 100);
+    text('🎮 Instructions 🎮', 60, 100);
     textSize(25);
-    text('--> Click on "Start New Level" to Play', 20, 200);
-    text('--> Use Arrow buttons to move player', 20, 300);
-    text('--> Player have to move all Boxes to Gems', 20, 400);
+    text('👉 Click on "Start New Level" to Play', 20, 200);
+    text('👉 Use Arrow buttons to move player', 20, 300);
+    text('👉 Player have to move all Boxes to Gems', 20, 400);
 }

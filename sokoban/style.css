@@ -112,3 +112,17 @@ button:hover {
 .control-grid button:nth-child(2) { grid-column: 1; }
 .control-grid button:nth-child(3) { grid-column: 3; }
 .control-grid button:nth-child(4) { grid-column: 2; }
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.undo {
+    width: 20%;
+    margin-top: 85px;
+    margin-right: 30px;
+}

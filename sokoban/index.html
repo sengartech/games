@@ -36,16 +36,19 @@
         <div id="canva_block"></div>
     </div>
 
-    <div class="controls">
-        <div class="control-grid">
-            <button id="move_up" onclick="goUp()">⬆️</button>
-            <button id="move_left" onclick="goLeft()">⬅️</button>
-            <button id="move_right" onclick="goRight()">➡️</button>
-            <button id="move_down" onclick="goDown()">⬇️</button>
+    <div class="actions">
+        <button class="btn undo" color="white" onclick="revertStep()">Undo</button>
+
+        <div class="controls">
+            <div class="control-grid">
+                <button id="move_up" onclick="goUp()">⬆️</button>
+                <button id="move_left" onclick="goLeft()">⬅️</button>
+                <button id="move_right" onclick="goRight()">➡️</button>
+                <button id="move_down" onclick="goDown()">⬇️</button>
+            </div>
         </div>
     </div>
-    <!-- <button class="btn" color="white" onclick="newLevel()">New Level</button>
-    <button class="btn" color="white" onclick="revertStep()">Undo</button> -->
+    <!-- <button class="btn" color="white" onclick="newLevel()">New Level</button> -->
 
     <script>
         document.getElementById("generateButton").addEventListener("click", () => playSound("new_level"));
