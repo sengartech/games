@@ -37,7 +37,7 @@
     </div>
 
     <div class="actions">
-        <button class="btn undo" color="white" onclick="revertStep()">Undo</button>
+        <button class="btn undo" id="revert_click" color="white" onclick="revertStep()">Revert</button>
 
         <div class="controls">
             <div class="control-grid">
@@ -56,6 +56,7 @@
         document.getElementById("move_left").addEventListener("click", () => playSound("move_click"));
         document.getElementById("move_right").addEventListener("click", () => playSound("move_click"));
         document.getElementById("move_down").addEventListener("click", () => playSound("move_click"));
+        // document.getElementById("revert_click").addEventListener("click", () => playSound("revert"));
     </script>
 </body>
 </html>
