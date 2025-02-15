@@ -17,34 +17,45 @@
     <title>Sokoban</title>
 </head>
 <body>
-    <div class="settings">
-        <button id="generateButton" class="btn" color="white" onClick="randomLevel()">
-            <b>Start New Level</b></button>
-        <!-- <button id="optimizeButton" class="btn" color="white" onClick="optimize(500)">
-            <b>Optimize Level</b></button> -->
+    <div id="start_screen">
+        <div class="instructions">
+            <h1>🎮 Instructions 🎮</h1>
+            <p>👉 Click on "Start New Level" to Play</p>
+            <p>👉 Use Arrow buttons to move player</p>
+            <p>👉 Player have to move all Boxes to Gems</p>
+        </div>
 
-        <div id="sizeTxt" class="slider_text">level size</div>
-        <input type="range" min="7" max="20" value="12" class="slider" id="sizeSlider"
-            onchange="displayHtmlValues()">
-
-        <div id="boxTxt" class="slider_text">number of boxes</div>
-        <input type="range" min="1" max="10" value="5" class="slider" id="numSlider"
-            onchange="displayHtmlValues()">
+        <div class="settings">
+            <button id="generateButton" class="btn" color="white" onClick="randomLevel()">
+                <b>Start New Level</b></button>
+            <!-- <button id="optimizeButton" class="btn" color="white" onClick="optimize(500)">
+                <b>Optimize Level</b></button> -->
+    
+            <div id="sizeTxt" class="slider_text">level size</div>
+            <input type="range" min="7" max="20" value="12" class="slider" id="sizeSlider"
+                onchange="displayHtmlValues()">
+    
+            <div id="boxTxt" class="slider_text">number of boxes</div>
+            <input type="range" min="1" max="10" value="5" class="slider" id="numSlider"
+                onchange="displayHtmlValues()">
+        </div>
     </div>
 
-    <div class="container">
-        <div id="canva_block"></div>
-    </div>
-
-    <div class="actions">
-        <button class="btn undo" id="revert_click" color="white" onclick="revertStep()">Revert</button>
-
-        <div class="controls">
-            <div class="control-grid">
-                <button id="move_up" onclick="goUp()">⬆️</button>
-                <button id="move_left" onclick="goLeft()">⬅️</button>
-                <button id="move_right" onclick="goRight()">➡️</button>
-                <button id="move_down" onclick="goDown()">⬇️</button>
+    <div id="game_screen">
+        <div class="container">
+            <div id="canva_block"></div>
+        </div>
+    
+        <div class="actions">
+            <button class="btn undo" id="revert_click" color="white" onclick="revertStep()">Revert</button>
+    
+            <div class="controls">
+                <div class="control-grid">
+                    <button id="move_up" onclick="goUp()">⬆️</button>
+                    <button id="move_left" onclick="goLeft()">⬅️</button>
+                    <button id="move_right" onclick="goRight()">➡️</button>
+                    <button id="move_down" onclick="goDown()">⬇️</button>
+                </div>
             </div>
         </div>
     </div>

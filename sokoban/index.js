@@ -25,7 +25,7 @@ function setup() {
     background(0);
     preventArrowKeyScroll();
     drawOnlyWalls();
-    drawInstructions();
+    // drawInstructions();
 }
 
 //start new game
@@ -37,11 +37,12 @@ function startGame() {
 
 //generate random level
 function randomLevel() {
+    document.getElementById("start_screen").style.display = "none";
+    document.getElementById("game_screen").style.display = "block";
+
     levelNumber = 0;
     inGame = false;
     newLevel();
-    //document.getElementById("startButton").style.visibility = "visible";
-    //document.getElementById("startButton").disabled = false;
 }
 
 //optimize the level
