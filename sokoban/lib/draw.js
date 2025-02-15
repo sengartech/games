@@ -122,17 +122,21 @@ function drawOnlyWalls(){
 }
 
 function drawWin() {
-    var variable = Math.sin(counter / 128.) * 256;
-    
-    const rectY = (canvasY / 2)/ 2;
-    fill(variable, variable, variable);
-    rect(0, rectY, canvasX, 250, 20);
+    document.getElementById("start_screen").style.display = "none";
+    document.getElementById("game_screen").style.display = "block";
+    document.getElementById("result_screen").style.display = "block";
 
-    fill(256 - variable, 256 - variable, 256 - variable);
-    textSize(100);
-    text('Won!', 140, 250);
-    textSize(30);
-    text('You Can Start New Level', 90, 325);
+    // var variable = Math.sin(counter / 128.) * 256;
+    
+    // const rectY = (canvasY / 2)/ 2;
+    // fill(variable, variable, variable);
+    // rect(0, rectY, canvasX, 250, 20);
+
+    // fill(256 - variable, 256 - variable, 256 - variable);
+    // textSize(100);
+    // text('Won!', 140, 250);
+    // textSize(30);
+    // text('You Can Start New Level', 90, 325);
     counter++;
 
     if (!winSoundPlayed) {

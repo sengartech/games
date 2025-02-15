@@ -17,16 +17,20 @@
     <title>Sokoban</title>
 </head>
 <body>
+    <div class="header">
+        <h1>Sokoban</h1>
+    </div>
+
     <div id="start_screen">
         <div class="instructions">
-            <h1>🎮 Instructions 🎮</h1>
+            <h2>🎮 Instructions 🎮</h2>
             <p>👉 Click on "Start New Level" to Play</p>
             <p>👉 Use Arrow buttons to move player</p>
             <p>👉 Player have to move all Boxes to Gems</p>
         </div>
 
         <div class="settings">
-            <button id="generateButton" class="btn" color="white" onClick="randomLevel()">
+            <button id="start_new_level" class="btn start_button" color="white" onClick="randomLevel()">
                 <b>Start New Level</b></button>
             <!-- <button id="optimizeButton" class="btn" color="white" onClick="optimize(500)">
                 <b>Optimize Level</b></button> -->
@@ -59,10 +63,15 @@
             </div>
         </div>
     </div>
-    <!-- <button class="btn" color="white" onclick="newLevel()">New Level</button> -->
+
+    <div id="result_screen" class="result">
+        <h2>! You Won !</h2>
+        <button id="new_level" onclick="randomLevel()">New Level</button>
+    </div>
 
     <script>
-        document.getElementById("generateButton").addEventListener("click", () => playSound("new_level"));
+        document.getElementById("start_new_level").addEventListener("click", () => playSound("new_level"));
+        document.getElementById("new_level").addEventListener("click", () => playSound("new_level"));
         document.getElementById("move_up").addEventListener("click", () => playSound("move_click"));
         document.getElementById("move_left").addEventListener("click", () => playSound("move_click"));
         document.getElementById("move_right").addEventListener("click", () => playSound("move_click"));

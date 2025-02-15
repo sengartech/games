@@ -39,6 +39,7 @@ function startGame() {
 function randomLevel() {
     document.getElementById("start_screen").style.display = "none";
     document.getElementById("game_screen").style.display = "block";
+    document.getElementById("result_screen").style.display = "none";
 
     levelNumber = 0;
     inGame = false;
