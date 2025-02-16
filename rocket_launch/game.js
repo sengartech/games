@@ -968,27 +968,27 @@ function drawCharacter(posx, posy, scale) {
 	//
 	//ctx.stroke()
 	//
-	ctx.fillStyle = "#fff"
-	ctx.beginPath();
-	ctx.ellipse(100, 130, 35, 55, 0, 0, 2 * Math.PI);
-	ctx.fill();
-	ctx.fillStyle = "#A09CF1"
-	ctx.beginPath();
-	ctx.ellipse(100, 120, 25, 45, 0, 0, 2 * Math.PI);
-	ctx.fill();
+	// ctx.fillStyle = "#fff"
+	// ctx.beginPath();
+	// ctx.ellipse(100, 130, 35, 55, 0, 0, 2 * Math.PI);
+	// ctx.fill();
+	// ctx.fillStyle = "#A09CF1"
+	// ctx.beginPath();
+	// ctx.ellipse(100, 120, 25, 45, 0, 0, 2 * Math.PI);
+	// ctx.fill();
 	ctx.fillStyle = "#5D4E51"
 	ctx.beginPath();
 	ctx.ellipse(100, 95, 45, 25, 0.1, 0, 2 * Math.PI);
 	ctx.fill();
 	//
-	ctx.fillStyle = "#fff"
-	ctx.beginPath();
-	ctx.ellipse(100 + 150, 130, 35, 55, 0, 0, 2 * Math.PI);
-	ctx.fill();
-	ctx.fillStyle = "#A09CF1"
-	ctx.beginPath();
-	ctx.ellipse(100 + 150, 120, 25, 45, 0, 0, 2 * Math.PI);
-	ctx.fill();
+	// ctx.fillStyle = "#fff"
+	// ctx.beginPath();
+	// ctx.ellipse(100 + 150, 130, 35, 55, 0, 0, 2 * Math.PI);
+	// ctx.fill();
+	// ctx.fillStyle = "#A09CF1"
+	// ctx.beginPath();
+	// ctx.ellipse(100 + 150, 120, 25, 45, 0, 0, 2 * Math.PI);
+	// ctx.fill();
 	ctx.fillStyle = "#5D4E51"
 	ctx.beginPath();
 	ctx.ellipse(100 + 150, 95, 45, 25, -0.1, 0, 2 * Math.PI);
