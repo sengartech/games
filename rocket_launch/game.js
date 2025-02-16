@@ -69,12 +69,12 @@ lerpSpeed = 0.1
 mylatesttap = 0
 bottomTextText = ""
 
-polyLeft = parseInt(loadData("polyLeft", "13"))
+polyLeft = parseInt(loadData("polyLeft", "16"))
 currentPolyTextToShow = polyLeft
 
 
 
-blockSize = w / 13
+blockSize = w / 16
 bSize = blockSize / 2
 
 GENERATING = false
@@ -1776,7 +1776,7 @@ function draw() {
 
 
 function story22() {
-	setStoryMessage(["More precisely 13312", "but that isn't a problem", "for the ROCKET LAUNCH!!", " ",
+	setStoryMessage(["More precisely 16616", "but that isn't a problem", "for the ROCKET LAUNCH!!", " ",
 		"We are not in a hurry", "after all, and you know", "what they say:",
 		"puzzles keep our brain young", "and agile!"
 	])
@@ -3009,8 +3009,8 @@ function mouseUp(e) {
 			setStoryMessage([""])
 			storyState = 1
 			saveData("storyState", storyState.toString())
-			polyLeft = 13
-			currentPolyTextToShow = 13
+			polyLeft = 16
+			currentPolyTextToShow = 16
 			saveData("polyLeft", polyLeft.toString())
 			gotoMenu()
 			skipState = 6
@@ -3069,7 +3069,7 @@ function mouseUp(e) {
 			//RESET GAME VAR ETC
 			saveData("showTutorial", "true")
 			saveData("storyState", "0")
-			saveData("polyLeft", 13)
+			saveData("polyLeft", 16)
 			animateMouth = false
 			//saveData("muted", "false") //mute can stay as it is
 			location.reload();
@@ -3119,8 +3119,8 @@ function mouseUp(e) {
 						//if the player reloads during ship transition, they stay as they were before
 						//btw there is a problem if the player reloads between the two saveData
 						//in that case polyleft would be 0
-						polyLeft = 13312
-						currentPolyTextToShow = 13312
+						polyLeft = 16616
+						currentPolyTextToShow = 16616
 						saveData("polyLeft", polyLeft.toString())
 
 						storyState = 2
@@ -3128,7 +3128,7 @@ function mouseUp(e) {
 						state = "story-middle"
 						animateMouth = true
 						canSkip = true
-						setStoryMessage(["Look, ehm ...", "I don't know how to", "tell you this ...", " ", "Remember when I said", "there were '13 Rockyblocks'", "to be rescued?", "My ... bad, they are actually", "13 ... THOUSAND."])
+						setStoryMessage(["Look, ehm ...", "I don't know how to", "tell you this ...", " ", "Remember when I said", "there were '16 Rockyblocks'", "to be rescued?", "My ... bad, they are actually", "16 ... THOUSAND."])
 
 
 
@@ -3147,7 +3147,7 @@ function mouseUp(e) {
 						//setMessage(["Click to continue"], true)
 						canSkip = true
 						animateMouth = true
-						setStoryMessage(["ROCKET LAUNCH!!!", "We did it, Spacey!!!", " ", "WE ACTUALLY RESCUED ALL", "the 13312 Rockyblocks!", " ",
+						setStoryMessage(["ROCKET LAUNCH!!!", "We did it, Spacey!!!", " ", "WE ACTUALLY RESCUED ALL", "the 16616 Rockyblocks!", " ",
 							"Let's celebrate!", " ", "👏 🤩 💥 🤩 👏"
 						])
 
@@ -3322,7 +3322,7 @@ function mouseUp(e) {
 					animateMouth = true
 
 
-					setStoryMessage(["Hey Spacey, wake up!", "Guess what happened today.", "Yeah.", "Those 13 Rockyblocks", "got lost in the galaxy", " ", "AGAIN!"])
+					setStoryMessage(["Hey Spacey, wake up!", "Guess what happened today.", "Yeah.", "Those 16 Rockyblocks", "got lost in the galaxy", " ", "AGAIN!"])
 					//setMessage(["Click to continue"], true)
 
 
@@ -3860,7 +3860,7 @@ setLoadingColor()
 //RESET GAME for testing purposes
 /*
 saveData("storyState", "0")
-saveData("polyLeft", 13)
+saveData("polyLeft", 16)
 saveData("showTutorial", "true")
 */
 
