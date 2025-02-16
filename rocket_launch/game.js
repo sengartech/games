@@ -150,7 +150,7 @@ muteButton = createButton(w * 0.90, h * 0.06, 120, 120, "", 70, 0, 0, mute)
 buttons.push(muteButton)
 
 fullScreenButton = createButton(-1500, h * 0.06, 120, 120, "", 70, 0, 0, toggleFullscreen)
-buttons.push(fullScreenButton)
+// buttons.push(fullScreenButton)
 
 
 leftButton.originalx = -10000
